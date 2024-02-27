@@ -1,4 +1,4 @@
-package org.sparta.hh_lv2.dto;
+package org.sparta.hh_lv2.dto.user;
 
 import lombok.Getter;
 

@@ -11,9 +11,8 @@ package org.sparta.hh_lv2.controller;
 * UserRepository에 접근후 createUser로 저장.
 * */
 
-import org.sparta.hh_lv2.dto.UserRequestDto;
-import org.sparta.hh_lv2.dto.UserResponseDto;
-import org.sparta.hh_lv2.repository.UserRepository;
+import org.sparta.hh_lv2.dto.user.UserRequestDto;
+import org.sparta.hh_lv2.dto.user.UserResponseDto;
 import org.sparta.hh_lv2.service.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
