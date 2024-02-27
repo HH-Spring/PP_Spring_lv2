@@ -3,6 +3,7 @@ package org.sparta.hh_lv2.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.sparta.hh_lv2.dto.loan.LoanResponseDto;
 import org.springframework.cglib.core.Local;
 import org.springframework.data.annotation.CreatedDate;
 

@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.sparta.hh_lv2.dto.book.BookRequestDto;
 
 @Entity
 @Getter
@@ -15,7 +16,7 @@ public class Book extends Time {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long bookId;
 
-    @Column(nullable = false)
+    @Column
     private Long userId;
 
     @Column(nullable = false)
@@ -30,4 +31,10 @@ public class Book extends Time {
     @Column(nullable = false)
     private String publisher;
 
+    public Book(BookRequestDto bookRequestDto) {
+        this.title = bookRequestDto.getTitle();
+        this.author = bookRequestDto.getAuthor();
+        this.language = bookRequestDto.getLanguage();
+        this.publisher = bookRequestDto.getPublisher();
+    }
 }
